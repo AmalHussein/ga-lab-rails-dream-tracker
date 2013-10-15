@@ -1,6 +1,6 @@
 DreamTracker::Application.routes.draw do
   
-    root 'spider#index'
+    root 'dreams#index'
     resources :dreams 
 
 

@@ -13,7 +13,7 @@ class DreamsController < ApplicationController
 		end 
 
 		def create
-			@dream = Dream.new(spider_params)
+			@dream = Dream.new(dream_params)
 			if @dream.save 
 				redirect_to @dream
 			else 
@@ -48,5 +48,3 @@ class DreamsController < ApplicationController
 	end 
 
 end 
-
-
