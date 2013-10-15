@@ -1,9 +1,10 @@
 
 <h1>My Dream Tracker</h1>
 
+
 <% @dreams.each do |dream| %> 
-<h3><%= link_to dream.storyline ,dream %> </h3>
-<%= link_to "New Dream", new_dream_path%> 
-<%=  link_to "Edit Yo Dreamz", edit_dream_path %>
-<%= link_to 'Delete Dreams', dream, method: :delete, data: { confirm: "Can you ever really delete a dream?"} %>
+	<h3><%= link_to dream.title ,dream %> </h3>
+	<%= link_to "New Dream", new_dream_path%> 
+	<%=  link_to "Edit Dream", edit_dream_path(dream) %>
+	<%= link_to 'Delete Dreams', dream, method: :delete, data: { confirm: "Can you ever really delete a dream?"} %>
 <%end%> 

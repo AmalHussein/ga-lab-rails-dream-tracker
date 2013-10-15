@@ -44,7 +44,6 @@ class DreamsController < ApplicationController
 	end 
 
 	def dream_params
-		params.require(:dream).permit(:date, :scary, :happy, :storyline, :characters) 														
+		params.require(:dream).permit(:title , :date, :scary, :happy, :storyline, :characters) 														
 	end 
-
 end 
